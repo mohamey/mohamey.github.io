@@ -106,18 +106,18 @@
           <div class="container"><h2 class="section-heading">Contact Me</h2></div><br>
           <div class="container">
               <div class = "contact-form">
-                <form>
+                <form name="contact-me" method="post" action="form_to_email.php">
                   <div class="field form-group">
                     <label for="usr">Name:</label>
-                  <input type="text" class="form-control" id="usr">
+                  <input type="text" class="form-control" name="name"id="usr" required>
                   </div>
                   <div class="field form-group">
                     <label for="usr">Email:</label>
-                  <input type="text" class="form-control" id="usr">
+                  <input type="text" class="form-control" id="usr" name="email" required>
                   </div>
                   <div class="field form-group">
                 <label for="comment">Message:</label>
-                <textarea class="form-control" rows="5" id="comment"></textarea>
+                <textarea class="form-control" rows="5" id="comment" name="message" required></textarea>
                   </div>
                   <button type="button" class="btn btn-success"style="float:right; margin-right:10%;">Send Message!</button>
                 </form>
